@@ -98,7 +98,7 @@ Search and Delete / Welcome Message Removal Commands
 # Search Users Messages
 #=================================================================
     elif ans=="7":
-      gQuery=raw_input('Enter a search string (i.e. subject:"Bug 1398020"):')
+      gQuery=raw_input('Enter a search string (i.e. Gmail Team ):')
       sumCmd = fringeApp+' fringe gmail.v1 users.messages list --userId=me --fields="messages(id)"'+' --output_include_fields="prn;id"'+' --output_filename=all_messages.csv --oauth=service --file=all_users.csv --q="'+gQuery+'"'
       os.system(sumCmd)
 #=================================================================
